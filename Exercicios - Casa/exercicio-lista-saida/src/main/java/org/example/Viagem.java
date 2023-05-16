@@ -9,14 +9,16 @@ public class Viagem {
     private String aeroportoOrigem;
     private int dias;
 
-    public Viagem(int id) {
+    public Viagem(int id, String destino, int nmoPassagem, double valorPassagem, int numDias, String classeAviao) {
         this.id = id;
         this.nmoPassagem = nmoPassagem;
         this.destino = destino;
         this.valorPassagem = valorPassagem;
         this.classeAviao = classeAviao;
-        this.aeroportoOrigem = aeroportoOrigem;
-        this.dias = dias;
+        this.dias = numDias;
+    }
+
+    public Viagem(ListaObj<Viagem> listaViagem) {
     }
 
     public int getId() {
